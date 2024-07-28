@@ -8613,14 +8613,9 @@ var module_functions = {
             setTimeout(function() { addNotification('connecting to server...') })
           } else {
             uplink.connect = function() {}
-            if(s.gamemode === 10) {
-              setTimeout(function() { addNotification('Private Test gamemode is WIP') }, 500)
-            } else if(s.gamemode === 12) {
-              setTimeout(function() { addNotification('using local test server') }, 500)
+           if(s.gamemode === 12) {
+              setTimeout(function() { addNotification('Using server hosted locally.') }, 500)
             }
-            setTimeout(function() {
-              addNotification('try https://scenexe2.io, a decent game similar to scenexe.io')
-            }, 1000)
           }
         }
       }
