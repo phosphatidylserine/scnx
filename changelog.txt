@@ -1,0 +1,1824 @@
+ALPHA 0.12.0 - July 27, 2024
+- Modified client to work locally
+
+ALPHA 0.11.9 - June, 20, 2024
+- Modified client and set up server on glitch
+
+ALPHA 0.11.8 - February, 5, 2023
+- Added a captcha that sometimes shows when the server is at a high player count
+- More bot preventions will come in a future update
+
+ALPHA 0.11.7 - January 7, 2023
+- Fixed occasional disconnects that happened when teleporting between servers and dying in the crossroads/abyss
+
+ALPHA 0.11.6 - January 2, 2023
+- Fixed a bug that made the game not work on some IOS mobile devices
+- Fixed a bug that made sending chat messages not work on some mobile devices
+- Other minor bug fixes
+
+ALPHA 0.11.5 - December 30, 2022
+- Fixed a bug that sometimes caused disconnects when teleporting between servers
+- Fixed a bug that made debug mode always show ping as 0
+- Nerfed Meteor's speed (1.5 => 1.35)
+
+ALPHA 0.11.4 - December 29, 2022
+- The "Clickable Chat Links" setting is now off by default
+- Added a confirmation popup that shows before opening links sent in chat
+
+ALPHA 0.11.3 - November 13, 2022
+- Minor changes and buffs to the Abyss
+- Fixed a bug that wrongly kicked players for having too many connections
+- Other minor bug fixes
+
+ALPHA 0.11.2 - November 7, 2022
+- Fixed an exploit that allowed players to start in the Crossroads, Sanctuary, and Abyss
+- Minor changes and nerfs to the Abyss
+
+ALPHA 0.11.1 - November 6, 2022
+- The Abyss is now 4 Teams instead of FFA
+- Added Abyss profile icon backgrounds
+- The "Lone Survivor" achievement now gives 120 stars instead of 95
+- Minor bug fixes and changes to the Abyss
+
+ALPHA 0.11.0 - November 6, 2022
+- Added a new dimension - the Abyss
+    - it can be accessed through portals in the Crossroads
+    - it contains lots of radiant shapes
+    - more will be added to it in future updates
+- Fixed some bugs with achievements
+    - The Excursionist achievement no longer requires you to go back to the gamemode that you started in
+    - Fixed bug that made some level-specific achievements sometimes not get completed
+    - Fixed bug that made some level-specific achievements get completed instantly for players that respawned exactly at the achievement's required level
+        - if you completed the achievement this way, you will still have it
+- Added 2 new achievements
+    - Lone Survivor - Survive alone as a celestial in 2 Teams or 4 Teams for 10 minutues
+        - gives 95 stars
+        - there must be at least 13 players in the server during that time
+        - if another celestial joins or the player count drops below 13, the timer will pause
+    - Trespasser - Enter the Abyss
+        - gives 85 stars
+- Minor bug fixes
+
+ALPHA 0.10.9 - October 15, 2022
+- Auras now get disabled when passive mode is on
+- Added chat message typing indicators
+    - they can be disabled in settings by turning the "Show Typing Indicators" setting off
+    - the new "Silent Typing" setting makes it so that other players can't see when you're typing
+- Chat messages now always render above names and health bars
+- Clicking on the chat box now stops you from moving
+- Fallen tanks will no longer show their owner's chat messages after leaving the game
+- Control toggle notifications now only last half as long as other notifications
+- Names, chat, and health bars no longer show in screenshot mode
+    - enable the "Show Names & Chat in Screenshot Mode" setting to revert this
+- Other minor changes to chat messages
+- Minor bug fixes
+
+ALPHA 0.10.8 - September 26, 2022
+- Synope's minions' drones now get destroyed if the minion that made the drone gets destroyed
+    - this means that it is no longer possible to generate an infinite amount of drones using Synope
+- Object pushing is now more mass-based
+    - this means that it is now harder for smaller objects to push larger objects
+- Bug/Exploit fixes
+
+ALPHA 0.10.7 - September 17, 2022
+- Radiant polygons no longer multiply gained xp
+- Bug fixes
+    - Fixed bug that made Peacekeepers not spawn
+    - Other minor bug fixes
+
+ALPHA 0.10.6 - September 11, 2022
+- Added quick chat, opened by pressing T in-game
+    - quick chat makes it easier to quickly send chat messages and commands in-game
+    - just like any other keybind, the keybind used to open quick chat can be changed in settings
+    - on mobile, there's a button next to the chat input that opens quick chat
+        - this button can be disabled in settings by turning off the "Show Quick Chat Button" setting
+- Bug fixes
+
+ALPHA 0.10.5 - September 5, 2022
+- Pressing escape while typing in the chat box now deselects it
+    - this used to be a feature but stopped working a while ago because of a bug
+- The escape keybind is now editable like any other keybind
+- Fixed a bug that made the submit feedback/report bug forms not work
+- The darkness effect in the crossroads is now slightly translucent
+- Celestials leaving the game now counts as them dying
+    - this means if you were fighting a celestial that left the game, you'd get their xp as if you killed them
+    - this also applies to players that wouldn't spawn a fallen tank due to the fallen tank limit
+
+ALPHA 0.10.4 - August 29, 2022
+- Fixed a bug that made chat messages disappear earlier than they were supposed to
+- Fixed a bug that allowed players to sometimes kill the same person multiple times
+    - this would multiply the kill message and the xp given
+- Other small bug/exploit fixes
+- Fixed some connection issues
+
+ALPHA 0.10.3 - August 21, 2022
+- Account profile icons are now more customizable
+    - you can now use celestial upgrades and change the background color
+- Fixed an exploit that allowed normal tanks to enter The Sanctuary
+- Fixed a bug that made the submit feedback/report bug forms not work
+- Other minor bug fixes
+
+ALPHA 0.10.2 - August 16, 2022
+- Nebula can now upgrade to Oberon
+- Players with spawn protection can no longer deal body damage, enter wormholes, or enter gateways
+- Wormholes now last longer when empty
+- Increased base camera size by 20%
+    - Nerfed some upgrades' camera size to compensate
+        - Nerfed Assassin's camera size (1.5 => 1.4)
+        - Nerfed Marksman's camera size (1.7 => 1.5)
+        - Nerfed Mothership's camera size (1.25 => 1.2)
+- Added a new achievement
+    - Pristine - Reach level 60 without taking damage
+        - gives 75 stars
+- Having a square screen no longer gives a bigger camera size
+    - a 16:9 aspect ratio screen is optimal now
+- Polygons now shrink when despawning instead of doing a normal death animation
+- Objects traveling through wormholes or gateways now have a different fading out animation
+- There should now always be at least one wormhole in each server
+    - if a wormhole despawns or ruptures, a new one will always spawn in 10-15 seconds
+- Health bars now have an animation when fading in and out
+- Fixed an issue that made objects display a death animation when out of camera range
+    - this was most noticeable with large polygons and the Prime Celestial
+- Account passwords can now contain symbols
+- Becoming a celestial in the crossroads now gives spawn protection
+- Minor bug fixes and performance improvements
+
+ALPHA 0.10.1 - August 2, 2022
+- Fixed some connection issues
+- Modified some achievements
+    - Star Collector 
+        - needs 350 stars to complete instead of 250
+        - gives 45 stars instead of 40
+    - Star Hunter 
+        - needs 750 stars to complete instead of 650
+        - gives 65 stars instead of 60
+    - Star Hunter 
+        - needs 1,500 stars to complete instead of 1,000
+        - gives 135 stars instead of 115
+    - Monarch
+        - requires you to be on the leaderboard for 20 minutes instead of 10
+    - Classic
+        - now gives 60 stars instead of 40
+    - Oh Node!
+        - now gives 70 stars instead of 50
+    - if you've already completed any of these achievements, you will still have them but you won't get any more stars
+- Balancing changes
+    - Nerfed Castle's reload (1 => 1.5)
+    - Buffed Castle's damage (0.75 => 1.7)
+    - (Overall buff to Castle)
+    - Nerfed Bastion's penetration (1.5 => 1.3)
+    - Buffed Bastion's reload (3 => 2)
+    - (Overall buff to Bastion)
+- Added a "Show Hitboxes" setting for debug mode
+    - default off
+- Added 4 new body upgrades
+    - Brigade - upgrades from Spike, Turret, and Armory at level 30
+        - has extra body damage, extra speed, and an auto cannon with 2 barrels
+    - Battalion - upgrades from Brigade, Thorn, Castle, and Triplet at level 45
+        - has more speed and body damage than Forge, and has a bigger auto cannon with 3 barrels
+    - Forge - upgrades from Bonfire and Spike at level 30
+        - has extra body damage, extra speed, and a weak damaging aura
+    - Foundry - upgrades from Forge, Thorn, and Flare at level 45
+        - has more speed and damage than Forge, and has a bigger damaging aura
+- Bug fixes
+
+ALPHA 0.10.0 - July 27, 2022
+- Added accounts
+    - click the "sign up" text on the main menu to create an account
+        - you can still change your in-game name separately from your account username
+    - accounts aren't required to play and never will be
+    - other players in-game can't see if you're logged in or not
+- Added stars
+    - you earn stars by playing the game and completing achievements
+        - whenever you die, you get stars depending on how long you played for, how many players you killed, and how many polygons you killed
+            - if you disconnect or leave the game without dying, you get as many stars as you would've gotten if you died then
+        - killing players that are at a much lower level than you doesn't give you stars
+    - stars aren't a currency, they just contribute to unlocking some achievements
+- Added achievements
+    - achievements give stars when completed
+    - there are currently 26 achievements, and there will be more in the future
+    - you can only earn achievements when logged in with an account
+- Bonfire's, Flare's, Mender's, and Remedy's aura bases are now slightly smaller
+    - this is a purely cosmetic change, and does not affect gameplay at all
+- Added 3 new settings
+    - Show Percentages on Health Bars
+        - default off
+        - when on, shows entities' health percentages on their health bars
+    - Show Health Bar on HUD
+        - default off
+        - when on, shows your health bar at the bottom of the screen in addition to where it normally is
+    - Use Scientific Notation
+        - default off
+        - when on, scores higher than 1000 will be represented in scientific notation, for example 1.23b becomes 1.23e+9
+- Nerfed Void
+    - Nerfed its body damage (2.8 => 2.45)
+    - Nerfed its speed (1.55 => 1.4)
+- Players can no longer spawn as radiant
+- Fixed an exploit that allowed players to save scores for long periods of time after teleporting between servers
+    - Now, scores will only be saved for one minute after teleporting between servers
+- Names and health bars now show on the death screen
+    - chat messages still don't
+- Decreased the darkness in the Crossroads (0.75 => 0.6)
+
+ALPHA 0.9.10 - June 27, 2022
+- Balancing changes
+    - Nerfed Charon's trap launch speed (1 => 0.65)
+    - Buffed Moon's small drones' damage (0.65 => 0.75)
+    - Nerfed Moon's small drone launchers' reload (2 => 3)
+    - (Overall nerf to Moon)
+    - Buffed Satellite's small drones' damage (0.5 => 0.65)
+    - Nerfed Satellite's small drone launchers' reload (1 => 2)
+    - (Overall nerf to Satellite)
+    - Buffed Alpha's trap launch speed (0.55 => 0.65)
+    - Buffed Beta's trap launch speed (0.75 => 0.8)
+    - Buffed Hearth's damage (0.0625 => 0.1)
+    - Buffed Bonfire's damage (0.0625 => 0.1)
+    - Buffed Flare's damage (0.075 => 0.1)
+    - Buffed Artillery's health (1 => 1.1)
+    - Buffed Bombard's health (1 => 1.2)
+    - Buffed Riot's damage (0.55 => 0.75)
+    - Buffed Riot's trap launch speed (1 => 1.2)
+    - Nerfed Riot's reload (2 => 2.4)
+    - Nerfed Riot's trap penetration (3 => 1.65)
+    - (Overall nerf to Riot) 
+    - Buffed Barricade's damage (0.5 => 0.6)
+    - Buffed Barricade's trap launch speed (1 => 1.2)
+    - Nerfed Barricade's trap penetration (4.5 => 2.25)
+    - (Overall nerf to Barricade)
+    - Nerfed Raider's reload (9.5 => 11)
+- Added 3 new celestial drone body upgrades
+    - Triton - upgrades from Celestial at level 75
+        - has 3 small drone launchers and 3 large drone launchers
+    - Hyperion - upgrades from Triton at level 90
+        - also has has 3 small drone launchers and 3 large drone launchers, but they are stronger and the large one is bigger
+    - Oberon - upgrades from Triton and Nebula at level 90
+        - has 3 small drone launchers and an auto cannon
+- Added a limit of 10 fallen tanks per server and 2 per IP address
+- Replaced the "Show Particles" setting with "Particle Amount"
+    - with this, you can now change the amount of particles shown without disabling them completely
+    - you can now also turn off the crossroads/sanctuary background particles by disabling the new "Show Ambient Particles" setting
+- Upgrade buttons now react when hovered over with the mouse
+- Particles now spawn when tanks upgrade their class
+- Stat upgrades are now animated when upgraded
+- Stat upgrades on mobile now show the number of points put into them
+- Links in players' names in kill notifications are no longer clickable
+- Fixed a bug that made auto cannons shoot differently when targeting large polygons
+- Fixed a bug that made the death screen show your time alive as double what it actually was
+- Various other minor bug fixes
+
+ALPHA 0.9.9 - May 29, 2022
+- Players are now limited to only sending 5 chat messages per 3 seconds
+- Fixed some exploits and bugs
+
+ALPHA 0.9.8 - May 14, 2022
+- Updated the server selector
+- Added a new setting: Show Full Server List
+    - default off
+    - when on, shows the old server selector below the new one
+- The main menu background is now different for each gamemode
+- Balancing changes
+    - Buffed Split's front cannon's damage (1 => 1.5)
+    - Buffed Split's side cannons' penetration (1 => 1.15)
+    - Buffed Spread's front cannon's damage (1 => 1.7)
+    - Buffed Spread's front cannon's penetration (1 => 1.7)
+    - Buffed Spread's reload (1.5 => 1)
+    - Buffed Spread's camera size (1 => 1.1)
+    - Buffed Disperse's front cannon's damage (1.75 => 2)
+    - Buffed Disperse's reload (1.5 => 1.1)
+    - Buffed Single's damage (3 => 5.5)
+    - Nerfed Single's penetration (1.5 => 1.2)
+    - (Overall buff to Single)
+    - Buffed Destroyer's damage (9 => 14)
+    - Nerfed Destroyer's reload (3 => 4.5)
+    - (Overall buff to Destroyer)
+    - Buffed Compound's cannon's damage (3 => 5.5)
+    - Nerfed Compound's cannon's penetration (1.5 => 1.2)
+    - (Overall buff to Compound)
+    - Buffed Hybrid's cannon's damage (8 => 13)
+    - Nerfed Hybrid's cannon's penetration (1.3 => 1.2)
+    - Nerfed Hybrid's cannon's reload (3 => 4.5)
+    - (No change in damage per second to Hybrid)
+    - Buffed Guard's cannon's damage (1 => 1.5)
+    - Buffed Guard's cannon's penetration (1 => 1.5)
+    - Buffed Alloy's cannon's damage (1 => 1.5)
+    - Buffed Alloy's cannon's penetration (1 => 1.5)
+    - Buffed Gunner's damage (0.6 => 0.8)
+    - Buffed Gunner's reload (1 => 0.8)
+    - Buffed Gunner's bullet speed (1 => 1.1)
+    - Buffed Minigun's reload (1 => 0.8)
+    - Buffed Minigun's bullet speed (1 => 1.2)
+    - Buffed Minigun's camera size (1 => 1.1)
+    - Buffed Riot's trap damage (0.5 => 0.55)
+    - Nerfed Barricade's trap penetrate (0.5 => 0.45)
+    - Buffed Raider's auto cannon's damage (2 => 2.5)
+- Polygons now despawn 3 minutes after taking damage instead of 5
+- Fixed an exploit that allowed players to stack bullets with upgrades like Octo
+- Fixed an exploit that allowed players to duplicate xp
+- Fixed a bug that allowed large traps to go through walls in the Crossroads
+- Various other bug fixes
+
+ALPHA 0.9.7 - May 1, 2022
+- Fixed an exploit that allowed players to enter the Sanctuary as a normal tank
+- Balancing changes
+    - Nerfed Engineer's trap damage (0.65 => 0.5)
+    - Nerfed Engineer's auto cannon's damage (2 => 1.2)
+    - Nerfed Engineer's auto cannon's penetration (1.2 => 1)
+    - Nerfed Mechanic's auto cannon's damage (1.55 => 1.4)
+    - Nerfed Mechanic's trap damage (0.45 => 0.35)
+    - Buffed Raider's trap reload (13 => 9.5)
+    - Buffed Raider's auto cannon's reload (8 => 6)
+    - Buffed Raider's auto cannon's damage (1.9 => 2)
+    - Buffed Raider's auto cannon's penetration (2.5 => 2.65)
+    - Nerfed Raider's trap damage (2 => 1.8)
+    - Buffed Manufacturer's reload (25 => 12)
+    - Buffed Hatcher's reload (12 => 7)
+    - Buffed Industry's reload (24 => 14)
+
+ALPHA 0.9.6 - April 27, 2022
+- Changed how radiant shapes work
+    - they now give 25x xp instead of 7x
+    - higher level radiant shapes only give 4x the xp of the previous level
+    - radiant shapes have a 1 in 9 chance of being at a higher level, even in the Crossroads
+    - higher level radiant shapes now look different depending on their level
+    - radiant shapes now spawn more often in the Crossroads
+- Increased the amount of shapes in the Crossroads
+- Changed the look of Turret, Triplet, and Quadruplet
+    - they now only have one auto cannon with multiple barrels instead of multiple
+    - they still have the same stats as before
+- Added 4 new weapon upgrades
+    - Engineer - evolves from Gamma
+        - has one trap launcher that shoots traps with auto cannons on them
+    - Arsenal - evolves from Engineer and Barricade
+        - has two stacked trap launchers that shoot traps with double auto cannons on them
+    - Raider - evolves from Engineer and Beta
+        - has one large trap launcher that shoots stronger traps with stronger auto canons on them
+    - Mechanic - evolves from Engineer, Stockade, and Scrap
+        - has three small trap launchers that shoot small traps with auto cannons on them
+- Synope's minions' auto cannons no longer shoot when passive mode is on
+- Balancing changes
+    - Buffed Mono's penetration (1 => 1.5)
+    - Buffed Mono's damage (1 => 1.5)
+    - Buffed Duo's penetration (1 => 1.4)
+    - Buffed Duo's damage (1 => 1.3)
+    - Buffed Trio's penetration (1 => 1.3)
+    - Buffed Trio's damage (1 => 1.15)
+    - Buffed Quadro's penetration (1 => 1.25)
+    - Buffed Flank's damage (1 => 1.5)
+    - Buffed Quad's damage (1 => 1.5)
+    - Buffed Octo's damage (1 => 1.5)
+    - Buffed Conglomerate's cannon's damage (1 => 1.5)
+    - Buffed Arc's damage (1 => 1.3)
+    - Buffed Horizon's small cannons' damage (0.75 => 1)
+    - Buffed Horizon's large cannon's damage (1 => 1.5)
+    - Buffed Penta's penetration (1 => 1.25)
+    - Buffed Penta's side cannons' damage (1 => 1.1)
+    - Nerfed Penta's front cannon's damage (1.5 => 1.1)
+- Fixed bug that sometimes made drones disappear without respawning
+- Fixed bug that allowed players to break base defenders
+
+ALPHA 0.9.5 - April 19, 2022
+- Balancing changes
+    - Buffed Pollux's speed (0.93 => 1)
+    - Buffed Pollux's damage (3 => 4.5)
+    - Nerfed Pollux's reload (3 => 4)
+    - (Overall buff to Pollux)
+    - Nerfed Alpha's trap launch speed (1 => 0.55)
+        - this sounds like a huge nerf but the traps still travel around 75% of their old distance before stopping
+    - Nerfed Beta's trap launch speed (1 => 0.75)
+    - Nerfed Gamma's trap launch speed (1 => 0.9)
+    - Slightly nerfed the body damage stat upgrade by around 10%
+- Fixed bug that made polyps not spawn from wormholes
+- Fixed bug that allowed players to duplicate themselves
+- Fixed bug that sometimes caused extreme lag and freezing in the Crossroads and the Sanctuary
+- Fixed bug that made upgrade buttons not go away if the upgrade is a drone upgrade
+
+ALPHA 0.9.4 - April 18, 2022
+- Added experimental mobile support
+    - to access the game on mobile, just go to the website on your mobile device
+    - it's experimental, so it might be laggy or buggy
+    - upgrade buttons are moved to the top while on mobile, and stat upgrades look a bit different
+    - you can't repel drones, and drone control is a bit clunky
+    - there are also a few mobile-only settings
+        - Joystick Size
+            - default 100, min 0, max 200
+            - controls the size of the joysticks
+        - Joystick Offset
+            - default 250, min 0, max 400
+            - controls the joysticks' offset from the sides of the screen
+        - Invert Joysticks
+            - default off
+            - when on, swaps the sides of the move and shoot joysticks
+        - Show Drone Trajectory
+            - default off
+            - when on, shows your drones' target (moveable using the shoot joystick)
+- The leaderboard is now animated
+    - it now also updates 8 times a second instead of 2
+    - it's also been optimized
+- Added a new celestial body upgrade: Pollux
+    - evolves from Nebula, has one large auto cannon
+- Improved fallen tanks' AI
+    - they are now better at hitting moving targets
+    - adjusted their view range to better match normal players'
+    - their playstyle is now better adjusted to their build 
+- Various balancing changes
+    - Increased polygon spawn rate
+    - Increased chance of polygons being bigger
+    - Slightly decreased polygon health
+    - Nerfed all celestials' base health (7.5 => 6.5)
+    - Nerfed Chasm's health (1.2 => 1)
+    - Buffed Comet's health (0.4 => 0.5)
+    - Nerfed Meteor's health (1.15 => 0.95)
+    - Nerfed Void's body damage (3 => 2.8)
+    - Nerfed Void's health (1.2 => 1)
+    - Nerfed Bombard's damage (3.8 => 3.5)
+    - Nerfed Bombard's penetration (2.3 => 2.15)
+    - Nerfed Synope's small drones' speed (1.5 => 1.2)
+    - Nerfed Synope's small drones' damage (2 => 1.8)
+    - Nerfed Synope's camera size (1 => 0.9)
+    - Nerfed Moon's camera size (1 => 0.9)
+    - Nerfed Satellite's camera size (0.95 => 0.9)
+    - Nerfed Moon's large drones' speed (1.3 => 1.15)
+    - Nerfed Trapper's damage (1 => 0.65)
+    - Buffed Corvus's health (1 => 1.45)
+    - Buffed Corvus's healing aura's healing (1 => 1.25)
+    - Buffed Cygnus's speed (1.2 => 1.25)
+    - Buffed Cygnus's health (1 => 1.65)
+    - Buffed Cygnus's healing aura's healing (1.5 => 1.75)
+    - Buffed Naos's speed (1 => 1.1)
+    - Buffed Naos's health (1 => 1.35)
+    - Buffed Naos's healing aura's healing (1 => 1.25)
+    - Buffed Mender's speed (1 => 1.1)
+    - Buffed Mender's health (1 => 1.5)
+    - Buffed Mender's healing aura's healing (1 => 1.25)
+    - Buffed Remedy's speed (1 => 1.1)
+    - Buffed Remedy's health (1 => 1.6)
+    - Buffed Remedy's healing aura's healing (1.25 => 1.5)
+    - Buffed Fabricator's speed (1 => 1.15)
+    - Buffed Fabricator's health (1 => 1.8)
+    - Buffed Fabricator's healing aura's healing (1.5 => 1.75)
+    - Buffed Conglomerate's max drones (3 => 4)
+- Client sided performance improvements
+- Fixed bug that made spawn protection always last 5 seconds even if you didn't move or shoot
+- Fixed bug that made drone forget distance not scale with camera size
+- Fixed bug that made healing auras only work on enemies
+    - they now only work on teammates and yourself, as they were supposed to
+
+ALPHA 0.9.3 - March 30, 2022
+- Added 2 Teams gamemode
+    - it's just like 4 teams, except there are only 2 teams
+    - team bases are much taller and take up an entire side of the map
+    - each base has 4 base defenders
+- Fixed bug that made gateways in the sanctuary and the crossroads shrink
+- You can now press space to shoot and shift to repel drones
+    - both of these are customizable in settings
+- Right clicking no longer shoots
+- Nerfed radiant shapes
+    - they now only give 7x xp instead of 10x
+    - they now spawn less frequently in the crossroads
+- Various balancing changes
+    - Killing players now gives 60% of their xp instead of 75%
+    - The most xp you can keep after being killed by someone of a higher level than you is now 75% instead of 90%
+    - Body damage now increases less when leveling up
+    - Slightly nerfed the bullet damage and bullet penetration stat upgrades
+    - Nerfed Bombard's damage (4 => 3.8)
+    - Nerfed Bombard's penetration (2.5 => 2.3)
+    - Nerfed Bombard's reload (4 => 4.5)
+    - Nerfed Bombard's bullet speed (1.5 => 1.3)
+- Added a temporary fix for an issue that allowed players to clip outside of walls
+
+ALPHA 0.9.2 - March 24, 2022
+- Long chat messages and notifications can now wrap to multiple lines
+- Chat message character limit increased (150 => 750)
+- Various balancing changes
+    - Nerfed Nebula's large auto cannon's detection distance (35 => 30)
+    - Nerfed Nebula's large auto cannon's bullet speed (1.5 => 1.25)
+    - Nerfed Nebula's large auto cannon's reload (0.75 => 1)
+    - Nerfed Galaxy's large auto cannon's detection distance (40 => 30)
+    - Nerfed Galaxy's large auto cannon's bullet speed (1.6 => 1.25)
+    - Nerfed Galaxy's large auto cannon's reload (0.75 => 1)
+    - Buffed Streamliner's reload (1.1 => 1)
+    - Buffed Streamliner's damage (0.5 => 0.65)
+    - Buffed Streamliner's camera size (1 => 1.2)
+    - Buffed Hangar's camera size (1 => 1.1)
+    - Buffed Warship's camera size (1 => 1.15)
+    - Buffed Battleship's camera size (1 => 1.2)
+    - Buffed Mothership's camera size (1 => 1.25)
+    - Buffed Satellite's camera size (0.9 => 0.95)
+    - Buffed Moon's camera size (0.9 => 1)
+    - Buffed Synope's camera size (0.9 => 1)
+    - Buffed Disperse's camera size (1 => 1.2)
+    - Buffed Disperse's front cannon's damage (1.5 => 1.75)
+    - Buffed Sentry's damage (0.5 => 0.8)
+    - Buffed Armory's damage (0.5 => 0.8)
+    - Buffed Citadel's damage (0.5 => 0.8)
+    - Buffed Turret's damage (0.4 => 0.8)
+    - Buffed Triplet's damage (0.4 => 0.8)
+    - Buffed Quadruplet's damage (0.4 => 0.8)
+    - Buffed Bombard's damage (3.5 => 4)
+    - Buffed Bombard's penetration (1.7 => 2.5)
+    - Nerfed Bastion's reload (2.5 => 3)
+    - Nerfed Debris's large trap launcher's damage (2 => 1.8)
+    - Nerfed Debris's large trap launcher's penetration (3 => 2.5)
+    - Nerfed Debris's small trap launcher's penetration (2 => 1.4)
+    - Nerfed Asteroid's large trap launcher's damage (3 => 2)
+    - Nerfed Asteroid's large trap launcher's penetration (3.5 => 3)
+    - Nerfed Asteroid's small trap launcher's penetration (2 => 1.8)
+    - Nerfed Assasin's bullet penetration (2.5 => 2.2)
+    - Nerfed Assassin's bullet speed (1.5 => 1.4)
+    - Nerfed Marksman's bullet speed (1.85 => 1.7)
+    - Nerfed Marksman's camera size (1.75 => 1.7)
+    - Nerfed Chasm's body damage (5 => 2)
+    - Nerfed Chasm's health (1.4 => 1.2)
+    - Nerfed Comet's health (0.63 => 0.4)
+    - Nerfed Comet's body damage (3.5 => 1.7)
+    - Nerfed Void's body damage (6.8 => 3)
+    - Nerfed Void's health (1.55 => 1.2)
+    - Nerfed Meteor's body damage (3 => 1.8)
+    - Nerfed Meteor's health (1.25 => 1.15)
+    - (Because of a bug that previously set Chasm, Comet, Void, and Meteor's body damage to 1, all of them effectively got buffed)
+- Spawn protection time increased (30 => 60)
+- Spawn protection now lasts for 5 seconds after spawning even if you move
+    - it still lasts for 60 seconds if you don't move
+- Killing players now gives 75% of their xp instead of 50%
+- You now keep more of your xp when killed by someone of a much higher level than you
+    - you can keep anywhere from 25-90% depending on the level difference
+- You are now less likely to spawn next to other players in FFA
+- Fixed bug that made upgrade buttons move more slowly on lower framerates
+- Fixed bug that made wormholes emit less particles on lower framerates
+- Fixed bug that made body damage reset when switching servers
+- Fixed bug that made an ad sometimes cover the main menu button on the death screen
+- Fixed some connection issues
+- Fixed issues with some upgrades having inconsistent stats
+    - One of Blazar's barrels had 13 damage when the rest had 12
+    - One of Blazar's barrels had 2.5 reload when the rest had 3
+    - One of Hatcher's minions had 0.25 damage when the rest had 0.5
+    - Two of Scrap's barrels had 3 penetration when the rest had 2
+
+ALPHA 0.9.1 - February 19, 2022
+- Balancing changes
+    - Nerfed Annihilator's bullet penetration (1.8 => 1.6)
+    - Nerfed Blazar's damage (13 => 12)
+    - Nerfed Blazar's reload (2.5 => 3)
+    - Buffed Artillery's auto cannon detection range (20 => 25)
+    - Buffed Bombard's auto cannon detection range (25 => 40)
+- Fixed bug making auto cannons have 400x the range they were supposed to
+- Fixed bug sometimes stopping things from dying when their health reached 0
+- Fixed bug sometimes making bullets and entities invisible
+- Fixed bug causing collision to sometimes stop working
+
+ALPHA 0.9.0 - February 16, 2022
+- XP gained by killing something is now split between everything that killed it
+    - it's split proportionally based on how much damage each entity did to it in the last 8 seconds
+    - xp is only given to entities that did at least 15% of the damage in that time
+    - kill and death messages have also been changed to fit that
+- Drones will now despawn when they are far out of their owner's view range
+- Various balancing changes
+    - Buffed Satellite
+        - Buffed its small drone launchers' damage (0.25 => 0.5)
+        - Buffed its drone launcher's penetration (1 => 1.5)
+        - Buffed its max drones (20 => 22)
+    - Buffed Moon
+        - Buffed its small drone launchers' damage (0.25 => 0.65)
+        - Buffed its large drone launchers' damage (2 => 2.5)
+        - Buffed its drone launcher's penetration (1 => 1.5)
+        - Buffed its max drones (15 => 25)
+    - Buffed Synope
+        - Buffed its minions' drone penetration (0.25 => 0.5)
+        - Buffed its minions' auto cannon's damage (0.5 => 1)
+        - Buffed its minions' auto cannon's penetration (0.25 => 0.5)
+        - Nerfed its minions' auto cannon's reload (4 => 5)
+    - Nerfed Artillery's auto cannon detection range (25 => 20)
+    - Nerfed Bombard's auto cannon detection range (45 => 25)
+    - Nerfed Chasm's speed (1.5 => 1.25)
+    - Nerfed Comet's speed (2.5 => 1.9)
+    - Nerfed Void's speed (1.75 => 1.55)
+    - Buffed Artillery's speed (0.8 => 0.9)
+    - Buffed Bombard's speed (0.75 => 0.835)
+- Tanks slow down less when getting larger
+    - Buffed speed decrease on level up (0.98 => 0.983)
+    - Buffed Celestial base speed (0.25 => 0.35)
+- Major server performance improvements
+    - Collision detection should now be much faster for large amounts of bullets/traps
+- Auto cannon detection range now scales with bullet speed
+- The walls in the sanctuary are now darker
+- Base defenders' names are now hidden
+- Traps and bullets can no longer go through walls
+- Respawn level is now displayed after dying
+- Tweaked the ascending background
+    - The Prime Celestial didn't have its aura in it previously
+- Fixed bug causing entities to sometimes stop taking damage
+- Fixed bug causing ping to increase on lower framerates
+- Fixed bug causing server selector to show wrong server after ascending
+
+ALPHA 0.8.13 - January 30, 2022
+- Added banner ads to the main menu and death screen
+    - ads support the game and allow it to keep updating and expanding
+        - with ads, more servers and gamemodes can be added
+    - if you use an ad blocker, please turn it off to support the game
+- Minor client performance improvements
+- Various balancing changes
+    - Buffed Citadel's movement speed (0.9 => 0.95)
+    - Nerfed Armory's health (1.5 => 1)
+    - Nerfed Fortress
+        - Nerfed its health (1.75 => 1.5)
+        - Nerfed its body damage (1.5 => 1.35)
+    - Nerfed Palace's health (4 => 3.75)
+    - Nerfed Ziggurat's health (4.75 => 4.25)
+    - Nerfed Spike's health (1 => 0.95)
+    - Nerfed Thorn
+        - Nerfed its body damage (3.5 => 3.35)
+        - Nerfed its health (0.9 => 0.775)
+    - Nerfed Saw
+        - Nerfed its body damage (4 => 3.75)
+        - Nerfed its health (0.85 => 0.75)
+    - Nerfed Debris
+        - Nerfed its large trap launchers' penetration (4 => 3)
+        - Nerfed its small trap launchers' penetration (3 => 2)
+        - Buffed its small trap launchers' damage (1 => 1.5)
+    - Nerfed Asteroid
+        - Nerfed its large trap launchers' penetration (5 => 3.5)
+        - Nerfed its small trap launchers' penetration (4 => 1.5)
+        - Buffed its small trap launchers' damage (1 => 2)
+    - Nerfed Charon's trap penetration (3.5 => 2)
+    - Nerfed Blockade's trap penetration (8 => 5)
+    - Nerfed Rubble's trap penetration (3 => 2)
+    - Nerfed Scrap's trap penetration (5 => 2)
+    - Nerfed Shrapnel's trap penetration (2.5 => 2)
+    - Nerfed Stockade's trap penetration (6.5 => 4.5)
+    - Nerfed Palisade's trap penetration (5 => 3.5)
+    - Nerfed Amalgam's trap penetration (5 => 3.5)
+    - Nerfed Penta's side cannon damage (1.5 => 1)
+    - Buffed Flank's bullet penetration (1 => 1.5)
+    - Buffed Quad's bullet penetration (1 => 1.5)
+    - Buffed Octo's bullet penetration (1 => 1.5)
+    - Buffed Arc's bullet penetration (1 => 1.5)
+    - Buffed Horizon's small cannons' bullet penetration (1 => 1.5)
+    - Buffed Spread
+        - Buffed its small cannons' damage (0.5 => 1)
+        - Nerfed its small cannons' penetration (1 => 0.75)
+    - Buffed Disperse
+        - Buffed its small cannons' damage (0.5 => 1)
+        - Nerfed its small cannons' penetration (1 => 0.75)
+- Fixed bug causing Heliosphere's outer aura to do 10x damage
+
+ALPHA 0.8.12 - January 22, 2022
+- Fixed bug causing ascending to sometimes freeze the screen and disconnect you
+- Nerfed Manufacturer
+    - Nerfed its minions' health (5 => 3)
+    - Nerfed its minions' body damage (3 => 1.4)
+    - Nerfed its minions' speed (1.4 => 0.9)
+
+ALPHA 0.8.11 - January 22, 2022
+- Various balancing changes
+    - Decreased Streamliner's camera size (1.2 => 1)
+    - Nerfed Wake's trap penetration (8 => 4)
+    - Buffed Manufacturer's reload (60 => 25)
+    - Buffed Manufacturer's minions' health (2 => 5)
+    - Buffed Manufacturer's minions' body damage (1 => 3)
+    - Buffed Manufacturer's minions' bullet damage (3 => 4.5)
+    - Nerfed Marksman's bullet penetration (2.5 => 2)
+    - Buffed Marksman's bullet damage (4.5 => 5.5)
+    - (Overall tiny nerf to Marksman)
+    - Buffed Quadro's damage (0.9 => 1)
+- Fire auras' damage now scales with bullet penetration
+    - they now do less damage by default, but can do more depending on your bullet penetration stat
+    - they still scale with bullet damage and reload like before
+- Changed how healing auras work
+    - instead of just healing at a set rate, they make natural regeneration kick in and heal faster
+    - their power still scales with your health regeneration stat
+    - they still only heal you and your teammates
+    - most body upgrades with healing auras have been rebalanced
+- Fixed bug causing fallen tanks to not automatically upgrade
+- Fixed bug causing entities with spawn protection to not flash
+- Fixed some connection issues
+- Various bug fixes
+
+ALPHA 0.8.10 - January 17, 2022
+- Major server performance improvements
+- Minor client performance improvements
+- Various balancing changes
+    - Nerfed Debris's small trap launchers' penetration (4 => 3)
+    - Nerfed Asteroid's small trap launchers' penetration (5 => 4)
+    - Nerfed Asteroid's large trap launchers' penetration (6 => 5)
+    - Nerfed Asteroid's large trap launchers' damage (4 => 3)
+    - Nerfed Stockade's penetration (8 => 6.5)
+    - Nerfed Palisade's penetration (8 => 5)
+    - Nerfed Riot's penetration (5 => 3)
+    - Nerfed Barricade's penetration (7 => 5)
+    - Nerfed Palisade's penetration (3 => 2.5)
+    - Nerfed Amalgam's trap launchers' penetration (8 => 5)
+    - Buffed Conglomerate's front cannon's penetration (1 => 1.5)
+    - Buffed Bombard's speed (0.6 => 0.75)
+    - Buffed Artillery's speed (0.7 => 0.8)
+- Sniper can now evolve into Wake
+- Settings can now be changed in-game by pressing O
+- Tweaked debug mode (press m)
+    - Server name is now shown when debug mode is on
+        - can be turned off in settings
+    - More performance info is shown
+        - can be turned off in settings
+    - The "Click to Copy IDs" setting is now off by default
+    - Fixed bug causing the "Click to Copy IDs" setting to sometimes copy IDs more than it should
+    - Everything in debug mode now has a setting to turn on and off
+        - Show Class Names
+            - default off
+            - when on, shows entities' class names when debug mode is on
+        - Show Tick Time
+            - default on
+            - when off, hides the client and server tick time in debug mode
+        - Show Server Name
+            - default on,
+            - when off, hides the server name in debug mode
+        - Show Player Count
+            - default on
+            - when off, hides the player count in debug mode
+        - Show Global Player Count
+            - default on
+            - when off, hides the global player count in debug mode
+        - Show FPS
+            - default on
+            - when off, hides the FPS in debug mode
+        - Show Ping
+            - default on
+            - when off, hides the ping in debug mode
+        - Show Position
+            - default off
+            - when on, shows your position in debug mode
+        - Show Extra Performance Info
+            - default on
+            - when off, hides the extra performance info in debug mode
+                - extra performance info shows number of particles, bullets, tanks, and polygons in view
+        - Debug Mode Text Size
+            - default 100%
+            - min 0%, max 200%
+            - changed the size of the text in debug mode
+- Improved fallen tanks' AI
+    - They will now use auto spin while using upgrades that are the same on all sides, like Octo and Shrapnel
+    - They will now face the right direction when trying to use recoil
+        - Previously, they would always face backwards when trying to use recoil, which didn't work with upgrades like Wave and Wake
+        - Now, they will face in the direction that deals the most recoil instead of always backwards
+- Fallen tanks can now level up
+- Fallen tanks will now automatically upgrade when they are a high enough level
+    - they still can't ascend, and celestials still don't create fallen tanks
+- Changelog and version number now smoothly fade in after loading
+- Fixed bug causing mounted drone spawners to animate incorrectly
+
+ALPHA 0.8.9 - January 3, 2022
+- Various balancing changes
+    - Nerfed Executive's max drones (3 => 2)
+    - Nerfed Executive's penetration (5.5 => 4.75)
+    - Nerfed Castle's health (1.75 => 1.55)
+    - Nerfed Thorn's health (1 => 0.9)
+    - Nerfed Thorn's speed (1.3 => 1.25)
+    - Nerfed Saw's speed (1.4 => 1.3)
+    - Nerfed Saw's health (1 => 0.85)
+    - Nerfed Bastion's health (2 => 1.55)
+    - Nerfed Beta's damage (8 => 7)
+    - Buffed Alpha's reload (13 => 10)
+    - Nerfed Alpha's damage (10 => 8)
+    - Nerfed Alpha's penetration (2 => 1.65)
+    - (Overall nerf to Alpha)
+    - Nerfed Single's reload (1.5 => 2)
+    - Buffed Single's penetration (1 => 1.5)
+    - (Overall buff to Single)
+    - Nerfed Annihilator's reload (4 => 6)
+    - Buffed Annihilator's damage (13 => 16)
+    - Buffed Annihilator's penetration (1.5 => 1.8)
+    - (Overall buff to Annihilator)
+    - Nerfed Streamliner's reload (1 => 1.15)
+    - Buffed Streamliner's damage (0.45 => 0.5)
+- Renamed Hybrid to Alloy
+- Added 2 new weapon upgrades
+    - Compound - evolves from Alloy, Single, and Director
+    - Hybrid - evolves from Compound, Destroyer, and Manager
+- Tweaked drone AI
+    - they now prioritize entities closer to them, instead of closer to their owner
+- Your total score is now displayed on the HUD
+- Fixed bug causing some of Shrapnel's barrels to have incorrect stats
+- Fixed bug causing wormholes to sometimes not show on the minimap
+- Various minor bug fixes
+
+ALPHA 0.8.8 - December 26, 2021
+- Wormholes now last longer before collapsing
+- Various balancing changes
+    - Buffed Trapper's damage (0.5 => 1)
+    - Buffed Gamma's damage (0.75 => 4)
+    - Nerfed Gamma's penetration (12 => 2.5)
+    - Buffed Beta's damage (0.85 => 8)
+    - Nerfed Beta's penetration (15 => 1.8)
+    - Buffed Alpha's damage (0.9 => 10)
+    - Nerfed Alpha's penetration (20 => 2)
+    - Nerfed Executive's damage (6 => 5)
+    - Nerfed Executive's penetration (6 => 5)
+    - Nerfed Saw's body damage (4.5 => 4)
+    - Buffed Comet's health (0.55 => 0.63)
+    - Nerfed Void's health (1.75 => 1.25)
+- Wormholes now show on the minimap
+- Client sided performance improvements 
+- Renamed the "Auto Cannons" toggle to "Passive Mode"
+    - when on, stops auto cannons from attacking and minions from shooting like before
+    - also now stops drones from automatically targeting
+    - keybind is still V, but can be changed in settings
+- Radiant polygons are now twice as common but drop 5x less xp
+- Added a new setting: Click to Copy IDs in Debug Mode
+    - default on
+    - when on, clicking on an entity while in debug mode will copy its ID to your clipboard
+- Tweaked kill notifications
+- Celestial death messages are no longer announced to all players
+- Fixed bug causing objects to move the wrong direction when lagging
+
+ALPHA 0.8.7 - December 21, 2021
+- Polyps no longer push celestials
+- Renamed some larger polygons to be more consistent
+- Keybinds are now customizable in the settings menu
+    - Default Keybinds:
+        - Enter: ENTER
+        - Open Command: SLASH
+        - Open Chat: ENTER
+        - Move Up in Chat History: UP ARROW
+        - Move Down in Chat History: DOWN ARROW
+        - Move Up: W
+        - Move Down: S
+        - Move Left: A
+        - Move Right: D
+        - Move Up (Alternate): UP ARROW
+        - Move Down (Alternate): DOWN ARROW
+        - Move Left (Alternate): LEFT ARROW
+        - Move Right (Alternate): RIGHT ARROW
+        - Toggle Auto Fire: E
+        - Toggle Auto Spin: C
+        - Toggle Spin Lock: X
+        - Toggle Auto Cannons: V
+        - Toggle Debug Mode: M
+        - Toggle Screenshot Mode: P
+        - Open Weapon Upgrade Tree: Y
+        - Open Body Upgrade Tree: U
+- Various balancing changes
+    - Nerfed Charon's trap damage (10 => 8)
+    - Nerfed Comet's health (0.75 => 0.55)
+    - Buffed Blazar's bullet damage (10 => 13)
+    - Buffed Blazar's bullet penetration (1 => 1.5)
+    - Buffed Penta's reload (1.5 => 1)
+    - Buffed Penta's bullet damage (1 => 1.5)
+    - Buffed Disperse's front cannon damage (1 => 1.5)
+    - Buffed Disperse's front cannon penetration (1 => 2)
+    - Buffed Spread's front cannon penetration (1 => 1.5)
+    - Buffed Split's front cannon penetration (1 => 1.5)
+    - Nerfed Executive's reload (13 => 15)
+- Fixed bug causing wormholes to multiply
+    - there should've only been a maximum of 4 per server, sometimes there were up to a hundred
+- Fixed bug causing the upgrade buttons to not render layers correctly
+
+ALPHA 0.8.6 - December 10, 2021
+- Various balancing changes
+    - Faster bullets now penetrate the same as slower ones
+    - Nerfed Wave's front cannon's bullet penetration (3 => 2)
+    - Nerfed Bastion's body damage multiplier (2.5 => 2)
+    - Nerfed Bastion's health multiplier (3.5 => 2)
+    - Nerfed Castle's health multiplier (3 => 1.75)
+    - Nerfed Castle's body damage multiplier (2.2 => 1.75)
+    - Nerfed all traps' bullet penetration (6.75 => 5.5)
+    - Nerfed Riot's bullet penetration (6 => 5)
+    - Buffed all celestial trap launchers
+    - Buffed all non-celestial drone spawners (including body upgrades)
+- Particles are now rendered in front of auras
+- Server-Sided performance improvements
+- Fixed bug causing Guard to upgrade to Wave instead of Wake
+    - this allowed players to get a level 45 upgrade at level 30
+- Fixed memory leak
+
+ALPHA 0.8.5 - November 23, 2021
+- Fixed bug causing servers to sometimes freeze when someone ascends
+- Increased body push/knockback (0.05 => 0.065)
+- Bigger objects can now be pushed less
+- Bullets, Drones, and Traps now flash when damaged
+- Added 2 new weapon upgrades
+    - Wake - evolves from Flank and Guard
+        - has a trap launcher on the back, 2 weak cannons on the back that deal recoil, and one smaller cannon on the front that shoots faster, stronger shots
+    - Wave - evolves from Wake and Barricade
+        - has two trap launchers on the back, 2 weak cannons on the back, and one stronger cannon on the front
+- Added a new celestial weapon upgrade - Charon
+    - evolves from Debris
+        - 3 large trap launchers with high damage
+- Added a new celestial body upgrade - Comet
+    - evolves from Chasm
+        - Less health and body damage, but very fast
+- Fixed bug causing body and bullet damage to be inaccurate
+    - before this, a level 1 and a level 2 smasher would both die when ramming
+    - also fixes bullets not properly damaging each other, which made larger bullets and drones weaker than they should have been
+- Many body upgrade nerfs
+    - Nerfed Wall's health multiplier (3.5 => 1.75)
+    - Nerfed Wall's speed multiplier (1 => 0.95)
+    - Nerfed Citadel's health multiplier (3.5 => 1.75)
+    - Nerfed Fortress's health multiplier (3.5 => 1.75)
+    - Nerfed Stronghold's health multiplier (5 => 2.45)
+    - Nerfed Stronghold's speed multiplier (1 => 0.92)
+    - Nerfed Castle's health multiplier (4.5 => 3)
+    - Nerfed Castle's body damage multiplier (2.5 => 2.2)
+    - Nerfed Palace's health multiplier (6.5 => 4)
+    - Nerfed Palace's speed multiplier (1 => 0.9)
+    - Nerfed Bastion's health multiplier (5 => 3.5)
+    - Nerfed Bastion's body damage multiplier (3 => 2.5)
+    - Nerfed Bastion's speed multiplier (0.9 => 0.875)
+    - Nerfed Ziggurat's health multiplier (7 => 4.75)
+    - Nerfed Ziggurat's speed multiplier (1 => 0.85)
+    - Nerfed Meteor's body damage multiplier (5 => 3)
+    - Nerfed Meteor's health multiplier (3.5 => 1.25)
+    - Nerfed Chasm's health multiplier (3.5 => 1.4)
+    - Nerfed Void's health multiplier (3.5 => 1.75)
+
+ALPHA 0.8.4 - November 22, 2021
+- Player count is now displayed on the server list
+- Player count is now displayed in Debug Mode (Press M)
+- Modified the animation of some menu elements
+- Score above 25m is now kept when ascending
+- Nerfed celestials' damage multiplier (2 => 1.5)
+
+ALPHA 0.8.3 - November 17, 2021
+- Fixed bug causing wormholes not to spawn
+
+ALPHA 0.8.2 - November 16, 2021
+- Client and Server performance optimizations
+- Added a new setting: Static Camera
+    - default off
+    - when on, the camera will always be locked to your position, instead of smoothly moving towards it
+    - this does not affect camera shake, disable that by setting the setting "Camera Shake" to 0%
+- Added a new command: /renderentity
+    - renders an entity to a .png file
+    - usable by anyone
+    - syntax: /renderentity [target] [override rotation] [override team]
+        - target
+            - use "me" to do it to yourself, or use the ID of another entity (works on polygons)
+            - can only work on one entity at a time, you can't do /renderentity all
+        - override rotation
+            - rotation (in degrees) to render the entity facing
+            - if not set, uses the rotation of the entity
+        - override team
+            - team color to render the entity in
+            - if not set, uses the team color of the entity
+            - team colors
+                - -1 - fallen color (light grey)
+                - 2 - celestial color (pink)
+                - 3 - barrel color (grey)
+                - 4 - yellow
+                - 5 - white
+                - 6 - black
+                - 7 - outer color (dark grey)
+                - 10 - blue
+                - 11 - red
+                - 12 - green
+                - 13 - purple
+                - any invalid color will default to blue
+    - example: /renderentity me 45 5
+        - renders an image of a white tank with your upgrades, facing 45 degrees, and saves it as a .png file
+- Added a new celestial body upgrade: Meteor
+    - upgrades from Chasm and Exosphere
+    - has fire auras, extra body damage, speed, and health
+- Camera now moves faster
+- Auto Cannons, Drones, and Fallen Tanks will no longer target entities inside of bases
+    - does not affect polygons
+- Improved the aim of Auto Cannons
+    - they can now hit moving targets more accurately
+- Bullets are now no longer pushed when they hit an entity
+    - now they just go through it
+    - does not affect traps and drones
+- Tweaked the look of the full changelog
+    - text is bigger
+    - area is wider
+    - version names are now bigger and bold
+- Nerfed Riot's bullet penetration (8 => 6)
+- Nerfed Barricade's bullet penetration (8 => 7)
+- Fixed bug causing polyps to trap celestials in a corner of the sanctuary
+    - they will not stop following a target after around 30 seconds
+- Fixed bug causing the disconnect popup to show when you are still connected
+- Fixed bug causing normal tanks to be able to enter the sanctuary without turning into a celestial
+- Fixed bug causing players at exactly the xp to level up to not level up
+    - a player at exactly 100/100 xp would not level up before
+- Base defenders are now level 210 instead of 300
+    - purely visual
+    - the prime celestial is level 225
+
+ALPHA 0.8.1 - November 6, 2021
+- Server side performance optimizations
+- You are now fully invincible inside of your team base
+- Slightly nerfed celestials' base damage and health
+- Nerfed Chasm and Void's movement speed increase
+- Fixed bug causing celestials to not spawn with xp after dying
+- Nerfed Base Defenders' drone range (0.3 => 0.25)
+- Buffed Base Defenders' drone damage (70 => 200)
+- Buffed Base Defenders' drone penetration (4 => 80)
+- Buffed team bases' damage
+- Various bug fixes
+
+ALPHA 0.8.0 - November 1, 2021
+- Completely changed the celestial/ascending system
+    - Completely rebalanced celestial's stats
+        - they are now a bit stronger and faster, but level up more slowly
+        - upgrades have been balanced too
+        - added 1 new celestial body upgrade - Cygnus
+    - Added wormholes
+        - they spawn in the polygon nest, and sometimes bring something with them when they spawn
+        - after a little while, they ascend whatever is in them, turning players into celestials
+            - they can only hold level 60 or above players
+    - There is no longer an "ASCEND" button at level 60, instead you need to go into a wormhole to ascend
+    - Expect to see more updates to the sanctuary/celestials in the future
+- Server and Client sided performance optimizations
+- Entity landing effects now create a slight camera shake
+- Added FPS (frames per second) counter to debug mode (Press M)
+    - turns yellow when below 50, and red when below 15
+- Renamed Blazer to Blockade
+    - its name was too similar to Blazar, an unrelated celestial upgrade
+- Added 2 new settings
+    - Clickable Links
+        - default on
+        - when off, links in chat are no longer blue and cannot be clicked
+    - IDs in Debug Mode
+        - default off
+        - when on, entity IDs will be shown in debug mode, like it was before this update
+- Chat messages / notifications now have less round borders and smoothly move in/out
+- Bigger shapes now deal less body damage than smaller ones, instead of more
+    - (1.1x => 0.9x)
+- Nerfed body damage stat upgrade
+- Nerfed team base damage (0.5 => 0.125)
+- Slightly tweaked the look of Synope's drones
+- Riot & Barricade's barrels now look more consistent
+- Nerfed all traps' bullet penetration (8 => 6.75)
+- Nerfed Scrap, Rubble, and Shrapnel's bullet penetration (5 => 3)
+- Buffed base bullet speed (300 => 400)
+- Bullets can now go outside of the map border
+    - purely visual
+- Buffed base defenders' drone range (0.3 => 0.6)
+- Fixed bug causing bullet/entity fade out to slow down on lower framerates
+- Fixed bug causing particles to move more slowly on lower framerates
+- Fixed security issue with names on the death screen containing valid HTML
+
+ALPHA 0.7.5 - October 19, 2021
+- Server and Client sided performance optimizations
+- Added a new weapon upgrade - Manufacturer
+    - evolves from Factory, Manager, and Destroyer
+    - summons large drones that have 1 large barrel
+- Tank tree now shows starting upgrades
+- Upgrades on the tank tree are now greyed out if you aren't using that upgrade and can't upgrade to it
+- Buffed Annihilator's damage (10 => 13)
+- Buffed Destroyer's damage (7.5 => 9)
+- Base defenders now have player spawns that players spawn out of
+- Base defenders are now level 300 instead of 150
+    - this is only a visual difference, no stats are changed other than the ones mentioned in this changelog
+- Base defenders will now turn to face players in the base if they aren't attacking
+- Fixed bug causing base defenders' decreased drone range to not work
+    - this fix decreases base defenders' drone range (1 => 0.3)
+- Nerfed base defenders' base drone damage (100 => 70)
+- Auto cannons will now slowly rotate on the upgrade buttons
+- Added a Render Delay setting
+    - min 0ms, max 200ms
+    - default 100ms
+    - slightly increases input delay but makes the game look smoother
+- Settings with sliders now show the value next to the name
+- Fixed bug causing body drone generators to only render facing forward on the leaderboard
+- Fixed bug causing main menu background to flash quickly after dying
+- Fixed bug causing chat message/notification/particle fade out effect to slow down on lower framerates
+
+ALPHA 0.7.4 - October 16, 2021
+- Added a viewable tank tree (Hold Y or U)
+    - Weapon tank tree (Hold Y)
+    - Body tank tree (Hold U)
+    - Shows all upgrades
+- Added Executive - evolves from manager at level 45
+    - has one large drone gun, with slow reload but high damage and penetration
+- Buffed Director and Manager's bullet damage and penetration
+- Buffed all normal drones' penetration by 1.3x
+    - affects Commander, Overseer, Overlord, Emperor, Hybrid, Fusion, Conglomerate, and Amalgam
+- Added a few settings
+    - Show names
+        - default on
+        - when off, hides names from players, leaderboard, and death screen
+            - does not yet work with kill notifications
+    - Show chat
+        - default on
+        - when off, hides chat messages sent by other players and removes the chat box
+    - Show minimap
+        - default on
+        - when off, hides the minimap
+    - Show particles
+        - default on
+        - when off, hides all particles
+            - slightly improves performance, but some things will look worse
+    - Show own name
+        - default off
+        - when on, shows your own name above you
+    - HUD opacity
+        - default 100%
+        - changes the opacity of the HUD
+- Chat messages of unnamed players are now rendered lower
+- The "-" in between players' names and scores on the leaderboard is now hidden if the player is unnamed
+- Leaderboard can now show up to 8 players
+    - it scales in size if it has less than 8 players
+- Changed the look of modals
+    - Affects the submit feedback, report bugs, and disconnect modals
+- There is now a warning if you try to close the tab mid-game
+- Tweaked the look of upgrade buttons
+- Nerfed recoil (150 => 100)
+- Greatly nerfed base guardians' drone damage
+- Greatly buffed base guardians' drone health
+- Nerfed base guardians' drone range (0.2 => 0.15)
+- Full changelog button now opens into a modal instead of an external .txt file
+- Client-sided performance optimizations
+
+ALPHA 0.7.3 - October 6, 2021
+- Fixed bug causing health bars to render in the wrong colors
+- Added a limit of 3 connections per IP address
+
+ALPHA 0.7.2 - October 6, 2021
+- Server + Client stability improvements
+- Health bars of darker entities are now rendered brighter
+    - This used to be in the game but stopped working due to a bug
+- Nerfed Industry's damage by 2x 
+    - it was supposed to be this weak initially
+- Added Screenshot Mode - enable it by pressing P
+    - Hides all HUD elements
+        - names, buttons, health bars, chat, etc
+- Nerfed smasher branch
+- Fixed bug causing tank rotation to be inaccurate
+- Fixed bug causing barrel delay to not update when upgrading
+    - fixes "bullet stack"
+
+ALPHA 0.7.1 - October 3, 2021
+- Nerfed base defender drone range (0.5 => 0.2)
+- Added /rendertank command
+    - renders a tank as a png file (512x512)
+    - syntax /rendertank <weapon> <body> [rotation] [team] [size]
+    - usable by anyone
+    - example: /rendertank mono smasher
+        - renders a 512x512 png image of a blue Mono-Smasher facing upwards
+        - other example: /rendertank pulsar chasm 45 -1 50
+            - renders a Pulsar-Chasm rotated 45 degrees on team -1 (grey) and at size 50
+                - celestials' default size is 100, for others, it's 50
+                - team colors
+                    - -1 - fallen color (grey)
+                    - 2 - celestial color (pink)
+                    - 4 - yellow
+                    - 10 - blue
+                    - 11 - red
+                    - 12 - green
+                    - 13 - purple
+                    - any invalid color will default to red
+- Slightly changed the look of buttons on the main menu screen
+- Server-Sided stability improvements
+- Added 1 new weapon: Streamliner
+    - upgrades from Gunner and Trio at level 45
+    - has 6 weak cannons stacked on top of each other
+    - cannons have 1.2x bullet speed
+    - has 1.2x view range
+- Overlord can now evolve into Hatcher
+- Trio can now evolve into Industry
+
+ALPHA 0.7.0 - October 2, 2021
+- Added 4 new factory weapons
+    - Factory - evolves from Manager and Overseer at level 30
+        - 1 spawner - 5 max drones
+            - its drones are small tanks with 1 cannon
+            - they will shoot at and attack nearby enemies + shapes
+            - disable their shooting by turning off auto cannons (V)
+    - Industry - evolves from Factory at level 45
+        - 2 spawners - 4 max drones
+            - drones have two guns instead of 1
+            - the 2 spawners are just to tell them apart, it still generates drones at the same speed as a Factory
+    - Hatcher - evolves from Factory at level 45
+        - 3 spawners - 12 max drones
+            - drones are smaller and weaker, but generate faster
+    - Synope - celestial upgrade, evolves from Satellite at level 90
+        - 3 large spawners - 6 max drones
+            - drones have a turret and 3 drone guns
+            - drones have 3 max drones
+- Redid how bullets/body damage works
+    - Bullet Lifetime stat is now Bullet Penetration
+        - Works as the bullet's health
+        - Some classes now have increased bullet penetration
+            - all trappers, all snipers, Destroyer, Annihilator, Artillery, and Bombard
+        - Still increases max drones
+    - Body damage now works faster
+- Drone guns no longer deal recoil
+- Body & weapon drone limits are now separate
+- Polygons will now despawn if they are above 99% hp for 15 minutes
+    - This will help with large polygon buildup
+- The polygon nest is now 1/4 of the map size
+- Polygons spawning in the nest will now avoid spawning on players
+- Client-sided performance optimizations
+- Fixed bug causing the death screen to crash the game
+- Fixed bug causing debug mode's server tick time to show 0
+    - the last fix didn't work
+- Fixed bug causing defenders not to spawn in team mode
+
+ALPHA 0.6.7 - September 29, 2021
+- Fixed bug causing things to flicker
+- Fixed bug causing debug mode's server tick time to show 0
+
+ALPHA 0.6.6 - September 29, 2021
+- More major server stability + performance improvements
+- Major client stability improvements
+- Traps are no longer affected by the world border
+- Increased trap launch distance by 50%
+- Increased trap base lifetime by 33%
+- Nerfed Artillery's movement speed (0.8 => 0.7)
+- Nerfed Bombard's movement speed (0.7 => 0.6)
+- Wall's evolutions no longer decrease movement speed
+- Text in debug mode now turns yellow when close to being at an "unstable" value
+    - 250 for ping
+    - 8 for server tick time
+    - 5 for client tick time
+- Fixed bug causing tanks on the main menu to be rendered incorrectly
+
+ALPHA 0.6.5 - September 26, 2021
+- Selected server now saves on page reload
+- Server stability improvements + performance optimizations
+- Slightly increased fallen tanks' detection range
+- Auto Turrets will now switch targets more often
+- Fixed? bug causing chromebooks to not be able to connect
+
+ALPHA 0.6.4 - September 26, 2021
+- Added server selector to main menu
+    - There will be more servers in the future
+- Fixed bug causing ping to rapidly increase when the server is overloaded
+    - instead, the server will slow down a little, much better than a high input delay
+- Client and Server performance optimizations
+- Numbers in debug mode are now no longer smoothed
+- Added a link to the game's discord server to the main menu
+- Polygon size limit decreased (1/5 => 1/8)
+- Polygon spawnrate decreased (15 => 10) 
+
+ALPHA 0.6.3 - September 21, 2021
+- Celestials now get spawn protection when landing
+- Celestials will now always land in the center of map, preventing them from spawning near a team base and dying instantly
+- Fixed bug causing stats to not update correctly when ascending
+- Added a "Connecting..." message while connecting to the server
+
+ALPHA 0.6.2 - September 19, 2021
+- Added 4 teams gamemode, currently only available on the test server (test.scenexe.io) until the game gets more players
+    - each team has a base in the corner of the map, players spawn in their base
+    - each team has a defender that attacks anyone near 
+    - bullets and tanks take damage entering another team's base
+- Larger shapes now spawn near the middle of the map
+- Greatly nerfed health and xp of large shapes
+- Added a minimap
+- Entities now flash white when taking damage  
+- Tanks on the main menu now have different colors
+
+ALPHA 0.6.1 - September 16, 2021
+- Nerfed Bombard's damage (5 => 3.5)
+- Nerfed Artillery's damage (3 => 2)
+- Nerfed Bombard's bullet speed (2 => 1.5)
+- Nerfed Artillery's bullet speed (1.5 => 1.3)
+- Fixed bug causing death screen to show barrels mid shoot
+
+ALPHA 0.6.0 - September 16, 2021
+- Your tank is now displayed on the death screen
+- Death screen now fades in
+- You can now disable your auto cannons by pressing V
+    - This does not include drones
+- Added particles when tanks spawn
+- Links sent in chat now render correctly and are clickable
+- Client-Sided performance optimizations
+- Added 2 new chat commands usable by everyone
+    - keep in mind, you can't use usernames in commands, you need to get their ID by turning on debug mode (M)
+        - you can also use "tanks", "shapes", "players", "all", instead of an ID to target entities for commands
+    - /getkills - shows the number of kills an entity has
+        - there are also other get commands that have been in the game for a while but unmentioned in the changelog
+            - /getscore, /getsize, etc
+    - /count - counts the number of targeted entities 
+        - for example, "/count players" would show the number of players
+- Auto Fire, Auto Spin, and Spin Lock are now turned off automatically when dying
+- Added a limit of 4 chat messages that can render per player at once
+    - this also applies to notifications, and will help prevent spam
+- Chat character limit is now 150 again
+    - this is how it was before last update, 50 was supposed to be for the username limit instead
+- Tweaked the look of the Fortress
+- Fixed bug causing errors to be spammed in the console on death/respawn
+- Fixed bug causing fallen tanks using drones to not attack
+- Fixed bug causing turning off auto fire to sometimes not work
+- Fixed bug causing the rotation animation of auto cannons on the leaderboard to be choppy
+- Fixed bug causing stat upgrades to not get reset on ascending
+
+ALPHA 0.5.6 - September 14, 2021
+- Fallen tanks can now choose a rammer playstyle if they are using a rammer build
+    - This will help against fallen spam, as unarmed fallens will ram each other
+- Fixed bug causing large shapes to disappear at the edge of the screen
+- Particles emitted by auras / radiant shapes now slowly drift
+- The sanctuary now has ambient particles
+- Celestial base damage buffed (1.5 => 2.5)
+- Chat messages are now capped at 50 characters
+- Increased camera size (2000 => 2300)
+
+ALPHA 0.5.5 - September 11, 2021
+- Health bars of dark shapes are now white instead of the background being white
+- 6 new trap weapons
+    - Rubble - t2 upgrade with 4 small trap guns
+    - Scrap - t3 upgrade with 6 small trap guns
+    - Shrapnel - t4 upgrade with 8 small trap guns
+    - Alpha - t4 upgrade with one large trap gun
+    - Stockade - t3 upgrade with 3 evenly spaced trap guns
+    - Palisade - t4 upgrade with 4 evenly spaced trap guns
+- Octo's barrels now don't all shoot at the same time
+- Renamed Alpha to Gamma
+- Renamed Minelayer to Beta
+- Buffed Gamma and Beta's trap damage and size
+- Quadrupled the rarity of radiant shapes
+    - 2048 => 8192
+- Bullets now deal knockback
+    - scales with bullet size/speed
+- Added a link to the game's subreddit to the main menu
+- Fixed bug causing tanks on the leaderboard to render incorrectly
+
+ALPHA 0.5.4 - September 8, 2021
+- Tanks now show on the leaderboard
+- Fixed bug causing drone repelling to not work with auto fire on
+- Fixed bug causing toggling auto fire to stop movement
+- Fixed bug causing auto cannons', drones', and fallen tanks' aiming to get messed up on large shapes
+- Many balance changes
+    - Buffed celestial's max health multiplier (4 => 7.5)
+    - Buffed Horizons's small cannons' damage (0.6 => 0.75)
+    - Buffed Bombard's damage (4 => 5)
+    - Nerfed Bombard's reload (3 => 4)
+    - Nerfed Artillery's damage (4 => 2.5)
+    - Nerfed Assassin's reload (1.6 => 2)
+    - Nerfed Marksman's reload (2.5 => 3)
+    - Nerfed Marksman's camera size (2 => 1.85)
+    - Nerfed Assassin's camera size (1.6 => 1.5)
+    - Nerfed Sniper's camera size (1.3 => 1.2)
+
+ALPHA 0.5.3 - September 7, 2021
+- Normal tanks can now see the names of celestials
+- You can now use the arrow keys to move
+- Camera on the death screen now follows whatever kills you
+- Added a particle cap to prevent lag (200)
+- Drones, auto cannons, and fallen tanks will now properly target big shapes
+- Edges are now rounded
+- Slightly increased edge darkness
+- Changed the game's icon to fit the darker edges and rounded corners
+- Added a few new tanks to the main menu background
+- Slightly nerfed Marksman's reload speed
+- Client and server-sided optimizations
+- Fixed bug causing particles to flood the main menu
+- Fixed bug causing radiant shapes to flicker when the game is lagging
+- The full changelog button now opens in a new tab to avoid people losing progress
+
+ALPHA 0.5.2 - September 6, 2021
+- Added radiant shapes - very rare shapes that give a lot of xp
+    - Radiant shapes change color over time and give off particles
+    - 1 / 2048 chance of a shape being radiant
+    - Give 50x their normal xp 
+- Hearth + Mender and their evolutions now emit particles
+- Increased the size of the saw's outer square
+    - Purely visual
+- Auto spin should now work with the game not in focus
+- Increased base max health
+- Slightly nerfed celestial's view range
+- Nerfed Moon
+- Slightly nerfed Satellite
+- Fixed bug causing fallen tanks to not show multiple layers
+- Server-sided performance optimizations
+
+ALPHA 0.5.1 - September 5, 2021
+- Tier 2 celestials
+    - 4 body upgrades
+        - Galaxy - 6 small auto cannons and 1 large auto cannon
+        - Heliosphere - 5 damaging auras
+        - Naos - 1 healing aura and 4 auto cannons
+        - Void - More health, body damage, and speed
+    - 4 weapon upgrades
+        - Asteroid - 3 large trap guns and 6 small trap guns
+        - Blazar - 3 large cannons
+        - Quasar - 9 cannons
+        - Moon - 3 large drone guns and 6 small drone guns
+- Tweaked the look of the Chasm
+- Renamed Exosphere to Debris
+- Renamed Heliosphere to Exosphere
+- Barrel animations are now smooth
+- Major Server-sided performance optimizations
+    - Greatly optimized collision detection
+        - Server should be able to handle 10-20x more bullets and shapes than before
+    - Server now runs at 30 ticks per second instead of 60
+- Celestial health multiplier nerfed (15 => 4)
+- Fixed bug causing players to not spawn away from each other
+- Increased map size (1250 => 1500)
+- Polygon limit increased (750 => 1500)
+- Health bars on entities are now only shown at 99% health and below
+- Fixed bug causing upgrading reload to not work as it should
+
+ALPHA 0.5.0 - September 4, 2021
+- 7 new body upgrades
+    - Hearth - t1 upgrade, small damaging aura
+    - Bonfire - t2 upgrade, medium damaging aura
+    - Flare - t3 upgrade, large damaging aura
+    - Inferno - t4 upgrade, larger damaging aura
+    - Mender - t2 upgrade, small healing aura
+    - Remedy - t3 upgrade, medium healing aura
+    - Fabricator - t4 upgrade, large healing aura
+- 2 new celestial body upgrades
+    - Heliosphere - larger damaging aura with 3 smaller ones inside
+    - Corvus - large healing aura
+- Body and weapon upgrade points are no longer separate, meaning you can spend your points however you like
+    - they have more value than before to make up for it
+- Nerfed speed of smasher classes
+- Players will now spawn farther from other players
+- Changed the positioning of the Warship branch's drone generators
+- Upgrade buttons are now rounded
+- Health bar movement is now smoothed
+
+ALPHA 0.4.7 - September 2, 2021
+- Fixed bug causing mouse buttons to get stuck
+- Fixed bug causing thorn being able to upgrade into itself
+- Fixed bug causing aiming to not work on smaller screens
+- Celestials and normal tanks can now talk to each other
+
+ALPHA 0.4.6 - September 1, 2021
+- Heavy server-sided performance optimizations
+- Turning on auto-fire now makes drones target the mouse
+- Barrel rotation is now updated when camera moves
+- Max polygon size is now capped to 1/4 of the map size
+- Fixed bug causing tanks to not show health bar on death screen
+- Slightly nerfed body damage
+
+ALPHA 0.4.5 - August 30, 2021
+- Clicking buttons no longer shoots
+- Added spawn protection when you spawn, lasts for 30 seconds or until you move or shoot
+- Entity push is now scaled based on size 
+    - it is easier to push a small shape than a large one
+- Celestials now show on leaderboard
+- Celestial base speed increased (0.15 => 0.25)
+- Fixed bug causing leaderboard / score bars to overfill
+- Buffed Sniper/Single tanks
+
+ALPHA 0.4.4 - August 29, 2021
+- Redesigned the leaderboard and chat
+- UI size will now scale with screen size
+- Auto turrets and fallen tanks can now see larger entities better
+- Names & Health bars are now rendered above everything else
+- Fixed bug causing auto turrets to not passively spin if they haven't shot before
+- Fixed bug causing high level players to be unable to upgrade
+
+ALPHA 0.4.3 - August 29, 2021
+- Revamped most body upgrades, and added 6 new ones
+    - most have had stat/visual changes to look better and be more balanced
+    - 6 new bodies
+        - Palace - t3 upgrade - high health
+        - Ziggurat - t3 upgrade - very high health
+        - Saw - t4 upgrade - very high body damage
+        - Quadruplet - t4 upgrade - 4 small auto cannons
+        - Bombard - t4 upgrade - 1 high power & range auto cannon
+        - Bastion - t4 upgrade - high health, body damage, and an auto cannon
+- Bullets are now rendered in front of entities
+- 3 new sniper weapons branching off of Mono
+    - Sniper - t2 upgrade - 1 long, slow weapon with slightly increased view
+    - Assassin - t3 upgrade - 1 longer, slower weapon with increased view
+    - Marksman - t4 upgrade - 1 even longer, even slower weapon with greatly increased view
+- Camera size change is now smooth
+- Upgrade screen now shows 3 upgrades per row, instead of 2
+- Movement will now stop when you deselect the game
+    - This will stop you from moving when you aren't pressing anything
+- Fallen tanks will now be afraid of tanks much larger than them
+- Fallen tanks will now try not to accidentally ram entities and take body damage
+- Fallen tanks with sniper classes will now shoot targets from a distance
+
+ALPHA 0.4.2 - August 28, 2021
+- Entities and Bullets now fade out when destroyed, instead of instantly disappearing
+- Auto cannons now slowly turn when not in use
+- There is now an ignore button on upgrades
+    - Ignored upgrades come back when you level up
+    - You can't ignore upgrades in the sanctuary, or else you would be trapped
+- Your size & score bar now scale smoothly
+- When selecting an upgrade, the button smoothly slides off screen instead of instantly disappearing
+- Auto cannons now rotate smoothly
+- Celestial upgrades are now drawn larger than other ones
+- Added a few hints that show up at the top of your screen to show how to play
+- The sanctuary (Celestial's home) is now 2x larger
+- Celestials can no longer see names on the leaderboard
+- Nerfed celestials' start XP nerfed (25m => 20m)
+- Buffed celestials' base damage (1 => 2)
+- Buffed celestials' base body damage (1 => 1.5)
+- Buffed celestials' base hp (8 => 15)
+- Buffed Pulsar
+    - base bullet damage (1 => 1.5)
+    - base reload (1 => 0.75)
+    - 2x dps overall
+
+ALPHA 0.4.1 - August 27, 2021
+- Celestials now start with 25m xp instead of 0
+- Greatly nerfed celestials' base damage & body damage (4 => 1)
+- Greatly buffed celestials' base movement speed (0.1 => 0.15)
+- Buffed Quadro's base damage (0.75 => 0.9)
+
+ALPHA 0.4.0 - August 26, 2021
+- Added celestials - large boss tanks that occasionally launch from their home in another dimension
+    - There are currently only 2 celestial bodies and 3 celestial weapons
+    - They broadcast spawn/death messages to all players
+    - Bodies:
+        - Chasm - faster body with increased health and body damage
+        - Nebula - body with 4 auto cannons
+    - Weapons:
+        - Pulsar
+            - 6 normal cannons
+        - Exosphere
+            - 3 large trap guns, 6 small trap guns
+        - Satellite
+            - 3 large drone drone, 6 small drone guns, 20 max drones
+- Added a new system for when players reach level 60
+- Polygons now despawn after not being damaged for a while (10 minutes)
+    - this will help stop large polygons from building up over time and clogging the map
+- Auto cannon detection range no longer scales with entity size
+    - this will help with auto cannons sniping new players from out of their view
+- Auto spin speed decreased (0.03 => 0.02)
+- Health & Damage increase on level up decreased (2% => 1%)
+- Bullet speed & bullet lifetime stats decreased
+- Barrels now render above outer barrels again
+- Drone acceleration slightly increased (0.07 => 0.08)
+- 3 new weapons
+    - Disperse - t4 upgrade, 10 small cannons and 1 normal cannon
+    - Horizon - t4 upgrade, 6 small cannons and 3 normal cannons
+    - Penta - t4 upgrade, 5 normal cannons
+- Nerfed spread's reload speed (1s => 1.5s)
+- Increased camera size (1500 => 2000)
+- Nerfed recoil (280 => 200)
+- Increased chance of polygons being bigger (2.5 => 2.3)
+- Keybinds now work with caps lock on
+
+ALPHA 0.3.6 - August 24, 2021
+- Name character cap (50) actually works 
+- Upgrading classes while shooting now correctly orders bullets
+- Slightly decreased the size of the sentry's cannon
+    - this also affects the sentry's upgrades that use the same cannon
+- Buffed the smasher and its upgrades
+- Buffed the wall and its upgrades
+- Increased recoil (180 => 280)
+- Increased how much the body damage stat increases your body damage
+- The name of your class is now displayed under your name
+    - Names are weapon-body, so for example, a player using Mono and Smasher would be called a "Mono-Smasher"
+- Fallen tank's names are now "Fallen" and then the class name of the fallen tank
+- Debug mode screen now looks better
+    - now shows client mspt, also smoothes out numbers
+    - numbers turn red when above an "unstable" threshold
+        - for ping, it's 500
+        - for client/server mspt, it's 16
+- Fixed a bug causing some bodies (Castle, Armory, Citadel) to not show auto barrels
+
+ALPHA 0.3.5 - August 24, 2021
+- Base map size slightly increased (1000 => 1250)
+- Decreased polygon spawn rate (20 => 15)
+- Added a hard limit to polygon count to prevent lag
+    - Currently 750
+
+ALPHA 0.3.4 - August 23, 2021
+- Map border now increases slowly, instead of instantly like it was before
+- Map border now looks a bit different
+- Map grid size decreased (50 => 30)
+- Slightly increased player damage
+- Increased player health
+- Decreased trapper fire rate
+- New weapon: Amalgam
+    - t4 upgrade, upgrades from Conglomerate
+    - 1 more cannon, 1 more trap gun, and 3 more max drones
+- The text on the game over screen and main menu buttons can no longer be highlighted
+
+ALPHA 0.3.3 - August 22, 2021
+- Greatly nerfed traps
+- Barricade is now a t3 upgrade, upgrades from Blazer
+- Riot is now a t4 upgrade
+- Various performance improvements
+- Drones and traps no longer stutter when near a wall
+- Decreased polygon spawn rate (25 => 20)
+- Decreased base map size (1500 => 1000)
+
+ALPHA 0.3.2 - August 22, 2021
+- Added traps - slow, long-lasting bullets
+- 10 new weapons
+    - Trapper - t1 upgrade - 1 trap gun
+    - Alpha - t2 upgrade - 1 large trap gun
+    - Barricade - t2 upgrade - 2 stacked trap guns
+    - Blazer - t2 upgrade - 2 opposite sided trap guns
+    - Fusion - t2 upgrade - 1 trap gun and 1 drone generator
+    - Guard - t2 upgrade - 1 trap gun and 1 normal barrel
+    - Conglomerate - t3 upgrade - 1 trap gun, 1 normal barrel, and 2 drone generators
+    - Minelayer - t3 upgrade - 1 larger trap gun
+    - Riot - t3 upgrade - 3 stacked trap guns
+    - Minigun - t4 upgrade - 6 small normal barrels
+- Bullets can now hit each other, meaning you can block enemy fire by shooting (or traps)
+- Drones (and traps) now push off of each other, meaning you can no longer stack drones
+- Body drone generators now play an animation when shooting
+
+ALPHA 0.3.1 - August 22, 2021
+- Added drones - controllable bullets
+- Control drones by holding left click, repel them with right click
+    - when not pressing anything, they will hunt down targets
+- 4 new drone bodies
+    - Hangar - t1 upgrade - 1 drone generator
+    - Warship - t2 upgrade - 2 drone generators
+    - Battleship - t3 upgrade - 3 drone generators
+    - Mothership - t4 upgrade - 4 drone generators
+- 7 new drone weapons
+    - Commander - t1 upgrade - 1 drone generator
+    - Director - t2 upgrade - 1 large drone generator
+    - Hybrid - t2 upgrade - 1 drone generator and 1 normal barrel
+    - Overseer - t2 upgrade - 2 drone generators
+    - Manager - t3 upgrade - 1 larger drone generator
+    - Overlord - t3 upgrade - 3 drone generators
+    - Emperor - t4 upgrade - 4 drone generators
+- Rotation interpolation now works better, meaning client-sided rotation should look better
+    - this also affects fallen tank AI
+- Outer bodies now render above barrels
+
+ALPHA 0.3.0 - August 21, 2021
+- Remade the main menu and death screen
+- New buttons on the main menu to report bugs and submit feedback
+    - feel free to submit any suggestions
+- Death screen now lets you spectate the area in which you were killed in
+    - you can't see chat messages while you are spectating
+- There is now a max username length, 50 characters
+- Leaderboard now shows kills
+- Death screen now shows time alive and kills
+
+ALPHA 0.2.5 - August 20, 2021
+- New body: Triplet
+    - t3 upgrade
+    - 3 auto guns
+    - Evolves from turret
+- 2 new weapons:
+    Gunner: t3 upgrade, 4 small guns, evolves from duo and split
+    Quadro: t4 upgrade, 4 larger guns, evolves from gunner and trio
+- Main menu screen now has a background
+- Admin commands are now restricted to admins only
+
+ALPHA 0.2.4 - August 18, 2021
+- Debug mode - enable by pressing M
+    - shows ping and entity IDs, more functions to it will come if needed
+- Fallen tanks will no longer target low level players unless attacked
+- Greatly improved Fallen tanks' AI
+- Fallen tanks will now attack each other
+- Movement speed is now normalized
+    - which means moving diagonally doesn't double your speed
+- Added an icon to the website
+
+ALPHA 0.2.3 - August 17, 2021
+- Map size now dynamically grows/shrinks depending on player count
+    - shape count also dynamically increases to keep the name amount of shapes per area as before
+- When a player leaves the game, instead of their tank getting instantly deleted, it becomes "fallen"
+- Fallen tanks are gray and attack on their own, attacking and following nearby shapes and players
+    - this will definitely need balancing in the future
+
+ALPHA 0.2.2 - August 17, 2021
+- Added Thorn, a new t3 body upgrade
+    - upgrades from spike, has more health and body damage
+- Various stat changes
+- You now keep 25% of your score when you respawn
+- Pressing the up and down arrows in chat now allows you to resend your past send messages / commands
+- Fixed strange bug causing people who had the same upgrades to share weapons
+    - bug allowed people to shoot 2x as fast, but only when the other person was not shooting
+    - bugged cannons also played a shoot animation if the other person shot
+
+ALPHA 0.2.1 - August 17, 2021
+- Added 9 new body upgrades!
+    - Sentry
+        - t1 body with an auto cannon
+    - Armory
+        - t2 body with increased body damage an auto cannon
+    - Citadel
+        - t2 body with increased health and an auto cannon
+    - Fortress
+        - t2 body with increased body damage and health
+    - Spike
+        - t2 body with greatly increased body damage
+    - Stronghold
+        - t2 body with greatly increased health
+    - Turret
+        - t2 body with two auto cannons
+    - Artillery
+        - t3 body with one big auto cannon
+    - Castle 
+        - t3 body with increased body damage and health, and also has a auto cannon
+- Removed Hex and replaced it with Octo
+    - Octo is now t4 instead of t5
+- Arc is now t3 instead of t4
+- Various balancing / stat changes
+
+ALPHA 0.2.0 - August 16, 2021
+- Added class upgrades!
+    - There are only 13 weapon upgrades and 2 body upgrades currently, but more are coming soon!
+    - There are upgrades every 15 levels, starting at level 1
+- Body and weapon upgrades are separate
+    - that means you can have them both at the same time, just like stat upgrades
+- Guns now play an animation when shooting
+- Increased how much the health regen stat contributes to your heal speed
+- Decreased size increase on level up
+    - (2% => 1%)
+- Tanks are now completely data-driven, which means custom tanks with chat commands are possible
+- Slightly decreased camera size
+- Player size no longer influences recoil
+- Fixed bug with big shapes not being properly culled and flashing in/out of view
+- Fixed bug disconnecting people instantly after joining
+- Various performance improvements
+
+ALPHA 0.1.1 - August 15, 2021
+- Fixed bug with rounding numbers
+    - (1000undefined => 1k, 1000k => 1m)
+- Made camera zoom consistent, zoom should be the same on all resolutions
+    - zooming out the webpage no longer gives you more view
+- Performance improvements
+    - entities out of your view are no longer rendered or sent to your client
+        - should improve render performance and network performance
+- Polygons of the same type always give the same amount of xp
+- Killing players now gives 75% of their xp
+    - is still 25% for shapes
+- Polygons now spawn in groups instead of randomly
+- Lowered chance of big polygons spawning
+    - there should now be much less large polygons
+- Polygons TEMPORARILY no longer grow over time
+- Changed look of health bars
+    - this look will probably be tweaked again soon 
+
+ALPHA 0.1.0 - August 15, 2021
+- Added stat upgrades!
+    - Each one goes up to 20 levels
+    - Weapon upgrades:
+        - Reload
+            - min 0.5s, max 0.15s
+        - Bullet Damage
+            - min 20, max 60
+        - Bullet Speed
+            - min 300, max 800
+        - Bullet Lifetime
+            - min 1.2s, max 7s
+     - Body upgrades:
+        - Max Health
+            - min 150, max 500
+        - Health Regeneration
+            - min 1, max 5
+        - Body Damage
+            - min 3, max 10
+        - Movement Speed
+            - min 50, max 200
+    - these values are not balanced at all, and will definitely change in the future
+    - more stats will probably also be added
+    - leveling up still increases your stats also, and stacks with stat upgrades
+    - pressing the number on the stat bar will upgrade it without having to click
+- You currently get a stat point for both your weapon AND your body when you level up
+    - this may change so that it's not every level in the future
+- Fixed many bugs, including some server crashes
+- Tweaked many stats
+- Changed how health regeneration works
+    - instead of constantly healing you, it will wait until you haven't taken damage for a certain amount of time, and then start healing you proportionally to your max hp.
+        - the "certain amount of time" is based on your health regen stat also
+
+ALPHA 0.0.4 - August 14, 2021
+- Leaderboard & xp bars will now round the xp 
+- They will also add endings, for example: 1143 => 1.14k, 20248172 => 20.2m 
+- Decreased the increase of xp per level (1.5x => 1.1x)
+
+ALPHA 0.0.3 - August 14, 2021
+- Added full changelog to main menu, so all past updates are visible
+- Control Toggles (Auto Fire, Auto Spin, Spin Lock) now show their keybinds when toggled
+    - so if you accidentally press one, you'll know how to turn it off
+- Refactored and optimized some of the game's code
+- Added a system for chat commands, though none exist currently
+    - except admin ones that will help in testing the game
+        - there aren't currently restrictions on who can use them, so let's just hope nobody finds them
+- Increased the time chat messages and notifications stay on screen
+    - Chat messages (6.5s => 12s)
+    - Notifications (3s => 6s)
+
+ALPHA 0.0.2 - August 13, 2021
+- Added Changelog
+- Added recoil to bullets
+- Changed stats back to normal (60 shots per second was just for fun)
+- Fixed some bugs
+- Fixed server crash when someone kills someone after they die
+- Username is now saved on page reload
+
+ALPHA 0.0.1 - August 13, 2021
+- First public release
+- Moved domain to scenexe.io
+- Current Features:
+    - Main Menu
+        - names have no character limit or filter currently, and don't save when you leave the page
+        - death screen when you die, no visuals at the moment, and no spectating who killed you
+    - Players, no upgrades, no classes other than default tank
+        - no level cap
+    - Shapes that grow very slowly over time
+        - also no level cap, stats aren't balanced either
+    - Leaderboard
+        - no visuals other than the top 5 player's name, level, and score
+    - Body Damage / Push
+        - shapes can't damage each other, but can push each other
+    - Chat
+        - only shows above player's names, so you can only talk to people close to you
+        - currently 150 character limit and no chat filter
+    - Kill Notification
+        - you get a notification every time you kill someone
+    - Control Toggles
+        - Auto Spin (C)
+            - automatically turns your tank
+            - direction switches each time you turn it on
+        - Auto Fire (E)
+            - automatically shoots without having to hold down click
+        - Spin Lock (X)
+            - stops your mouse from turning your tank
+            - does nothing with auto spin enabled
+- The game lacks polishing and balancing, expect bugs and crashes while the game is in ALPHA
+- The stats are changed just for fun (no reload (60 bullets/second), shapes grow 40x faster, you get 20x someone's xp when you kill them)
